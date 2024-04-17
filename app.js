@@ -1,6 +1,8 @@
 const http=require("http")
-console.log("some text")
+const express=require("express")
+const app=express()
 
-const server=http.createServer();
+
+const server=http.createServer(app);
 
 server.listen(3000)
